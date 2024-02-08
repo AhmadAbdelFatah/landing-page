@@ -375,7 +375,6 @@ html:has(.toggle__checkbox:checked) {
 }
 
 .about__title {
-  height: 140px;
   margin-top: 130px;
   color: var(--main-text-color);
   font-size: 50px;
@@ -473,14 +472,38 @@ html:has(.toggle__checkbox:checked) {
   font-weight: 400;
   margin-top: 5px;
 }
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (max-width: 768px) {
+  .about .container {
+    justify-content: center;
+  }
   .about__left {
-    width: 455px;
+    margin-top: 25px;
+    text-align: center;
   }
   .about__title {
-    margin-top: 80px;
-    font-size: 40px;
-    line-height: 50px;
+    margin-top: 0;
+    font-size: 30px;
+  }
+  .about__title--bold {
+    font-weight: 600;
+    font-size: 28px;
+  }
+
+  .about__right {
+    display: none;
+  }
+  .about__link {
+    margin: 25px auto;
+  }
+  .about__bottom {
+    margin-top: 30px;
+    gap: 10px;
+  }
+  .about__bottom-box .score {
+    font-size: 20px;
+  }
+  .about__bottom-box .title {
+    font-size: 15px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -513,36 +536,17 @@ html:has(.toggle__checkbox:checked) {
     margin: 30px auto;
   }
 }
-
-@media (max-width: 768px) {
-  .about .container {
-    justify-content: center;
-  }
+@media (min-width: 992px) and (max-width: 1200px) {
   .about__left {
-    margin-top: 40px;
-    text-align: center;
+    width: 455px;
   }
   .about__title {
-    margin-top: 0;
-    font-size: 30px;
-  }
-  .about__right {
-    display: none;
-  }
-  .about__link {
-    margin: 25px auto;
-  }
-  .about__bottom {
-    margin-top: 30px;
-    gap: 10px;
-  }
-  .about__bottom-box .score {
-    font-size: 20px;
-  }
-  .about__bottom-box .title {
-    font-size: 15px;
+    margin-top: 80px;
+    font-size: 40px;
+    line-height: 50px;
   }
 }
+
 /* End about  */
 
 /* Start features */
@@ -589,7 +593,7 @@ html:has(.toggle__checkbox:checked) {
   font-weight: 400;
 }
 .features__list li::before {
-  content: url("/public/images/bx-bxs-check-circle.svg");
+  content: url("/landing-page/public/images/bx-bxs-check-circle.svg");
   display: inline-block;
   margin-top: 5px;
 }
@@ -709,7 +713,7 @@ html:has(.toggle__checkbox:checked) {
   font-weight: 400;
 }
 .pricing__list li::before {
-  content: url("/public/images/jam-check.svg");
+  content: url("/landing-page/public/images/jam-check.svg");
   margin-right: 20px;
   margin-top: 5px;
 }
