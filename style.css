@@ -344,7 +344,7 @@ html:has(.toggle__checkbox:checked) {
     gap: 30px;
   }
   .navigation .navigation__link {
-    margin-left: 20px;
+    margin-left: 10px;
     font-size: 14px;
     font-weight: 400;
   }
